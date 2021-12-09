@@ -53,13 +53,13 @@ const FetchContent: FC<PageProps> = ({ content }: PageProps) => {
       <Container maxWidth={"xl"} sx={{ marginTop: 2 }}>
         <Grid
           container
-          spacing={{ xs: 6, sm: 6, md: 4, lg: 4 }}
-          columns={{ xs: 12, sm: 12, md: 3, lg: 8 }}
+          spacing={{ xs: 6, sm: 6, md: 4, lg: 6, xl: 3 }}
+          columns={{ xs: 12, sm: 12, md: 2.5, lg: 8 }}
           justifyContent="center"
           alignItems="center"
         >
           {data?.results.map((item) => (
-            <Grid item key={item.id} lg={2} md={1}>
+            <Grid item key={item.id} lg={2.5} md={1}>
               <MediaCard item={item} />
             </Grid>
           ))}
